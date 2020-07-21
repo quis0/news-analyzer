@@ -1,4 +1,4 @@
-# news-analyzer
+<h1 align="center">News-analyzer :newspaper:</h1>
 
 *Read this in other languages: [English](README.md), [Русский](README.ru.md)*
 
