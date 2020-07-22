@@ -1,0 +1,9 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts.css);
+@import url(./blocks/search/search.css);
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}

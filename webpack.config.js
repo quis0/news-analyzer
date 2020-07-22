@@ -44,7 +44,7 @@ module.exports = {
               esModule: false,
               mozjpeg: {
                 progressive: true,
-                quality: 65
+                quality: 75
               },
               optipng: {
                 enabled: false,
@@ -70,6 +70,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'index.[contenthash].css',
     }),
+    // new MiniCssExtractPlugin({
+    //   filename: './i/index.[contenthash].css',
+    // }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
       cssProcessor: require('cssnano'),
@@ -83,6 +86,11 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html'
     }),
+    // new HtmlWebpackPlugin({
+    //   inject: false,
+    //   template: './src/asdasd.html',
+    //   filename: './i/dd.html'
+    // }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({
       'NODE_ENV': JSON.stringify(process.env.NODE_ENV)

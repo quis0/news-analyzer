@@ -1,0 +1,7 @@
+@import url(../header/header.css);
+@import url(./__container/search__container.css);
+
+.search {
+  background-image: url(../../images/search-bg.jpg);
+  min-height: 576px;
+}

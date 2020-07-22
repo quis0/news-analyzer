@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="keywords" content="news-analyzer, yandex-praktikum, diploma">
+  <meta name="author" content="Zotkevich Grigorij">
+  <meta name="description" content="Сервис для анализа происходящих в мире событий">
+  <title>NewsAnalyzer</title>
+  <link rel="shortcut icon" href="<%=require('./images/favicon.png').default%>" type="image/x-icon">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
-<body>
 
+<body class="page">
+
+  <section class="search">
+    <header class="header">
+      <h2 class="header__title header__title_style_white">NewsAnalyzer</h2>
+      <nav class="header__nav">
+        <ul class="header__links">
+          <li class="header__links-item">
+            <a class="header__link header__link_style_white header__link_status_active">Главная</a>
+          </li>
+          <li class="header__links-item">
+            <a class="header__link header__link_status_inactive" href="">О проекте</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="search__container">
+      <h1 class="search__title">Что в мире творится?</h1>
+      <p class="search__subtitle">
+        Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
+        прошедшую неделю.
+      </p>
+      <form novalidate class="search__form">
+        <input required type="text" name="text" id="text" placeholder="Введите тему новости" maxlength="30" class="search__text-field" >
+        <button type="submit" class="search__button">Искать</button>
+      </form>
+    </div>
+  </section>
+
+  <main class="main"></main>
+  <footer class="footer"></footer>
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
+
 </html>

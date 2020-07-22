@@ -1,0 +1,8 @@
+.header__links-item {
+  margin-right: 34px;
+  line-height: 24px;
+}
+
+.header__links-item:last-of-type {
+  margin-right: 0;
+}
