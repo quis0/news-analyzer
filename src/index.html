@@ -16,17 +16,20 @@
 
   <section class="search">
     <header class="header">
-      <h2 class="header__title header__title_style_white">NewsAnalyzer</h2>
-      <nav class="header__nav">
-        <ul class="header__links">
-          <li class="header__links-item">
-            <a class="header__link header__link_style_white header__link_status_active">Главная</a>
-          </li>
-          <li class="header__links-item">
-            <a class="header__link header__link_status_inactive" href="">О проекте</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__content">
+        <a href="/" class="header__title header__title_style_white">NewsAnalyzer</a>
+        <nav class="header__nav">
+          <ul class="header__links">
+            <li class="header__links-item">
+              <a href="/" class="header__link header__link_style_white header__link_status_active">Главная</a>
+            </li>
+            <li class="header__links-item">
+              <a class="header__link header__link_style_white header__link_status_inactive" href="">О проекте</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
     </header>
     <div class="search__container">
       <h1 class="search__title">Что в мире творится?</h1>
@@ -35,13 +38,98 @@
         прошедшую неделю.
       </p>
       <form novalidate class="search__form">
-        <input required type="text" name="text" id="text" placeholder="Введите тему новости" maxlength="30" class="search__text-field" >
-        <button type="submit" class="search__button">Искать</button>
+        <input required type="text" name="text" id="text" placeholder="Введите тему новости" maxlength="30"
+          class="search__text-field">
+        <button name="button" type="submit" class="search__button">Искать</button>
       </form>
     </div>
   </section>
 
-  <main class="main"></main>
+  <main class="main">
+    <section class="search-results">
+      <div class="search-results__container search-results__container_status_active">
+        <div class="search-results__preloader search-results__preloader_status_active">
+          <i class="search-results__spinner"></i>
+          <p class="search-results__text search-results__text_color_grey">Идет поиск новостей...</p>
+        </div>
+
+        <div class="search-results__empty search-results__empty_status_active">
+          <img src="<%=require('./images/sad-magnifier.png').default%>" class="search-results__not-found-image" alt="">
+          <h3 class="search-results__title search-results__title_size_small">Ничего не найдено</h3>
+          <p class="search-results__text search-results__text_color_grey">
+            К сожалению по вашему запросу
+            ничего&nbsp;не найдено.
+          </p>
+        </div>
+
+        <div class="search-results__card-container">
+          <div class="search-results__header">
+            <h2 class="search-results__title search-results__title_size_big">Результаты поиска</h2>
+            <a href="#" class="search-results__link">Посмотреть аналитику</a>
+          </div>
+
+          <ul class="search-results__cards">
+            <li class="search-results__card">
+              <img src="<%=require('./images/test-image.jpg').default%>" alt="" class="search-results__card-image">
+              <p class="search-results__card-date">2 августа, 2019</p>
+              <h3 class="search-results__card-title">Национальное достояние – парки</h3>
+              <p class="search-results__card-text">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
+                приобщиться к природе.В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
+                приобщиться к природе.
+              </p>
+              <p class="search-results__author">Лента.ру</p>
+            </li>
+            <li class="search-results__card">
+              <img src="<%=require('./images/test-image.jpg').default%>" alt="" class="search-results__card-image">
+              <p class="search-results__card-date">2 августа, 2019</p>
+              <h3 class="search-results__card-title">Национальное достояние – парки</h3>
+              <p class="search-results__card-text">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
+                приобщиться к природе.В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
+                приобщиться к природе.
+              </p>
+              <p class="search-results__author">Лента.ру</p>
+            </li>
+            <li class="search-results__card">
+              <img src="<%=require('./images/test-image.jpg').default%>" alt="" class="search-results__card-image">
+              <p class="search-results__card-date">2 августа, 2019</p>
+              <h3 class="search-results__card-title">Национальное достояние – парки</h3>
+              <p class="search-results__card-text">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
+                приобщиться к природе.В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
+                приобщиться к природе.
+              </p>
+              <p class="search-results__author">Лента.ру</p>
+            </li>
+            <li class="search-results__card">
+              <img src="<%=require('./images/test-image.jpg').default%>" alt="" class="search-results__card-image">
+              <p class="search-results__card-date">2 августа, 2019</p>
+              <h3 class="search-results__card-title">Национальное достояние – парки</h3>
+              <p class="search-results__card-text">
+                В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
+                приобщиться к природе.В 2016 году Америка отмечала важный юбилей: сто лет назад здесь
+                начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может
+                приобщиться к природе.
+              </p>
+              <p class="search-results__author">Лента.ру</p>
+            </li>
+
+          </ul>
+
+          <button class="search-results__render-button">Показать еще</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
   <footer class="footer"></footer>
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
