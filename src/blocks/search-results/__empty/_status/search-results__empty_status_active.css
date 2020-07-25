@@ -1,0 +1,5 @@
+.search-results__empty_status_active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

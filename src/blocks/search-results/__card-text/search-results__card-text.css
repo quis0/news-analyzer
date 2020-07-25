@@ -1,0 +1,15 @@
+.search-results__card-text {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1B22;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: 110px;
+}

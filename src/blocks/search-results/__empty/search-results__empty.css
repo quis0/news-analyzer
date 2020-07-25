@@ -1,0 +1,6 @@
+@import url(./_status/search-results__empty_status_active.css);
+@import url(./_status/search-results__empty_status_inactive.css);
+
+.search-results__empty {
+  max-width: 356px;
+}

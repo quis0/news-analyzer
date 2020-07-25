@@ -1,0 +1,25 @@
+.search-results__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  font-weight: 500;
+  color: #1A1B22;
+  display: flex;
+}
+
+.search-results__link::after {
+  content: '';
+  display: block;
+  background-image: url(../../../images/arrow.png);
+  height: 24px;
+  width: 24px;
+}
+
+.search-results__link:hover {
+  opacity: .9;
+}

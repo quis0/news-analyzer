@@ -1,0 +1,8 @@
+@import url(../__cards/search-results__cards.css);
+@import url(../__render-button/search-results__render-button.css);
+
+.search-results__card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
