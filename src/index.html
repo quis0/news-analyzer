@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="news-analyzer, yandex-praktikum, diploma">
-  <meta name="author" content="Zotkevich Grigorij">
+  <meta name="author" content="Zotkevich Grigory">
   <meta name="description" content="Сервис для анализа происходящих в мире событий">
   <title>NewsAnalyzer</title>
   <link rel="shortcut icon" href="<%=require('./images/favicon.png').default%>" type="image/x-icon">
@@ -62,7 +62,7 @@
           </p>
         </div>
 
-        <div class="search-results__card-container">
+        <div class="search-results__card-container search-results__card-container_status_active">
           <div class="search-results__header">
             <h2 class="search-results__title search-results__title_size_big">Результаты поиска</h2>
             <a href="#" class="search-results__link">Посмотреть аналитику</a>
@@ -129,8 +129,41 @@
 
       </div>
     </section>
+
+    <section class="about">
+      <div class="about__container">
+        <img src="<%=require('./images/test-image.jpg').default%>" alt="Фотография автора" class="about__photo">
+        <div class="about__text-container">
+          <h3 class="about__title">Об авторе</h3>
+          <p class="about__paragraph">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolores ea unde
+            voluptatum sint vel modi, repellendus recusandae consequuntur sunt similique eligendi eius? Tenetur totam ea
+            quam dolorum doloremque officia.
+          </p>
+          <p class="about__paragraph">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolores ea unde
+            voluptatum sint vel modi, repellendus recusandae consequuntur sunt similique eligendi eius? Tenetur totam ea
+            quam dolorum doloremque officia.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"></footer>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__author">&COPY; 2020 Zotkevich Grigory</p>
+      <ul class="footer__links">
+        <li></li><a class="footer__link" href="/">Главная</a></li>
+        <li><a class="footer__link" href="">О проекте</a></li>
+        <li><a class="footer__link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
+      </ul>
+      <ul class="footer__social">
+        <li><a class="footer__social-link" href="https://github.com/quis0"><img src="<%=require('./images/github-logo.png').default%>" alt="" class="footer__social-logo"></a></li>
+        <li><a class="footer__social-link" href="https://t.me/grigoryzotkevich"><img src="<%=require('./images/telegram-logo.png').default%>" alt="" class="footer__social-logo"></a></li>
+      </ul>
+    </div>
+  </footer>
   <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 

@@ -1,0 +1,10 @@
+@import url(../__photo/about__photo.css);
+@import url(../__text-container/about__text-container.css);
+
+.about__container {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}

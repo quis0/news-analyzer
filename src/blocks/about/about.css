@@ -1,0 +1,6 @@
+@import url(./__container/about__container.css);
+
+.about {
+  background-color: #FFFFFF;
+  padding: 80px 0;
+}

@@ -1,0 +1,11 @@
+@import url(../__link/footer__link.css);
+
+.footer__links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  margin-right: -40px;
+}
+
