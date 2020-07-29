@@ -1,0 +1,6 @@
+.table__scale {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 104px;
+}

@@ -1,0 +1,7 @@
+.table__titles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 238px;
+  margin-bottom: 12px;
+}

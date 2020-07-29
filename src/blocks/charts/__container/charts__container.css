@@ -1,0 +1,6 @@
+@import url(../__text/charts__text.css);
+
+.charts__container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
