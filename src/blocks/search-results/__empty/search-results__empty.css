@@ -3,4 +3,5 @@
 
 .search-results__empty {
   max-width: 356px;
+  margin-bottom: 8px;
 }

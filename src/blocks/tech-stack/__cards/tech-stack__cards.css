@@ -1,0 +1,10 @@
+@import url(../__card/tech-stack__card.css);
+
+.tech-stack__cards {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-right: -40px;
+}

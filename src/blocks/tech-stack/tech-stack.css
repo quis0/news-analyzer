@@ -1,0 +1,6 @@
+@import url(./__container/tech-stack__container.css);
+
+.tech-stack {
+  background-color: #F5F6F7;
+  padding: 80px 0 100px 0;
+}

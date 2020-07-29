@@ -1,15 +1,17 @@
 const path = require('path');
 const webpack = require('webpack');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
   entry: {
-    main: './src/index.js',
-    // name: './src/name.js'
+    main: './src/pages/main/index.js',
+    about: './src/pages/about/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -71,11 +73,8 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'index.[contenthash].css',
+      filename: '[name].[contenthash].css',
     }),
-    // new MiniCssExtractPlugin({
-    //   filename: './i/index.[contenthash].css',
-    // }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
       cssProcessor: require('cssnano'),
@@ -86,14 +85,16 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      template: './src/index.html',
+      template: './src/pages/main/index.html',
+      chunks: ['main'],
       filename: 'index.html'
     }),
-    // new HtmlWebpackPlugin({
-    //   inject: false,
-    //   template: './src/asdasd.html',
-    //   filename: './i/dd.html'
-    // }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/pages/about/index.html',
+      chunks: ['about'],
+      filename: 'about.html'
+    }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({
       'NODE_ENV': JSON.stringify(process.env.NODE_ENV)

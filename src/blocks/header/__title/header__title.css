@@ -1,3 +1,6 @@
+@import url(./_style/header__title_style_black.css);
+@import url(./_style/header__title_style_white.css);
+
 .header__title {
   margin: 0;
   font-family: 'Roboto Slab';
@@ -5,10 +8,10 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
-  color: #FFFFFF;
   text-decoration: none;
 }
 
 .header__title:hover {
   opacity: .9;
+  transition: all .4s ease;
 }

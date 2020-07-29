@@ -1,0 +1,7 @@
+@import url(./__container/for-client__container.css);
+
+.for-client {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}

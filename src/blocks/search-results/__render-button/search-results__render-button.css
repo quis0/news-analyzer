@@ -9,4 +9,5 @@
 
 .search-results__render-button:hover {
   opacity: 0.9;
+  transition: all .4s ease;
 }

@@ -1,0 +1,22 @@
+@import url(../../vendor/normalize.css);
+@import url(../../vendor/fonts.css);
+@import url(../../blocks/header/header.css);
+@import url(../../blocks/for-client/for-client.css);
+@import url(../../blocks/tech-stack/tech-stack.css);
+@import url(../../blocks/about/about.css);
+@import url(../../blocks/commits/commits.css);
+@import url(../../blocks/main-carousel/main-carousel.css);
+@import url(../../blocks/carousel-cell/carousel-cell.css);
+@import url(../../blocks/flickity-button/flickity-button.css);
+@import url(../../blocks/flickity-button-icon/flickity-button-icon.css);
+@import url(../../blocks/footer/footer.css);
+
+
+.page {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+

@@ -1,0 +1,7 @@
+.commits__author-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 1000px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}

@@ -1,0 +1,12 @@
+@import url(../__title/tech-stack__title.css);
+@import url(../__cards/tech-stack__cards.css);
+
+.tech-stack__container {
+  max-width: 1230px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding-right: 110px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
