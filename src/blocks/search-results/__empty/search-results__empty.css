@@ -5,3 +5,9 @@
   max-width: 356px;
   margin-bottom: 8px;
 }
+
+@media screen and (max-width: 767px) {
+  .search-results__empty {
+    max-width: 288px;
+  }
+}

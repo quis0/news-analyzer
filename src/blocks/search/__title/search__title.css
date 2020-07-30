@@ -7,3 +7,16 @@
   color: #FFFFFF;
   margin: 0 0 32px 0;
 }
+
+@media screen and (max-width: 1439px) {
+  .search__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search__title {
+    margin-bottom: 32px;
+  }
+}

@@ -1,8 +1,16 @@
 @import url(./__container/footer__container.css);
+@import url(./__nav/footer__nav.css);
 
 .footer {
   display: flex;
   align-items: center;
   background-color: #ffffff;
   height: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 20px 0 22px 0;
+    height: auto;
+  }
 }

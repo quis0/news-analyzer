@@ -2,9 +2,23 @@
   font-family: Roboto Slab;
   font-style: normal;
   font-weight: normal;
-  font-size: 26px;
+  font-size: 28px;
   line-height: 30px;
   color: #1A1B22;
   margin-top: 0;
   margin-bottom: 48px;
+}
+
+@media screen and (max-width: 1919px) {
+  .charts__text {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .charts__text {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
 }

@@ -9,3 +9,17 @@
   margin-right: -40px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .footer__links {
+    margin-right: -25px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__links {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
