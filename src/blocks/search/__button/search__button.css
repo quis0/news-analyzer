@@ -23,7 +23,7 @@
 
 .search__button:focus {
   background: #347EFF;
-  border: 1px solid transparent;
+  border: 1px solid black;
 }
 
 @media screen and (max-width: 767px) {
