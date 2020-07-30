@@ -6,5 +6,23 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1230px;
+  max-width: 1810px;
+}
+
+@media screen and (max-width: 1919px) {
+  .search-results__cards {
+    max-width: 1230px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .search-results__cards {
+    max-width: 688px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search-results__cards {
+    max-width: 288px;
+  }
 }

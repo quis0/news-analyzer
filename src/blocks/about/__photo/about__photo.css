@@ -4,3 +4,20 @@
   border-radius: 1000px;
   margin-right: 56px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .about__photo {
+    width: 232px;
+    height: 232px;
+    margin-top: 21px;
+    margin-right: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about__photo {
+    width: 272px;
+    height: 272px;
+    margin-right: 0;
+  }
+}

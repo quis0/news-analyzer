@@ -13,3 +13,20 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .search-results__card-title {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search-results__card-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 26px;
+  }
+}

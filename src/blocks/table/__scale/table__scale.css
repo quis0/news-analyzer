@@ -4,3 +4,9 @@
   justify-content: space-between;
   margin-left: 104px;
 }
+
+@media screen and (max-width: 767px) {
+  .table__scale {
+    display: none;
+  }
+}

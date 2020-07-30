@@ -8,3 +8,9 @@
   opacity: .9;
   transition: all .4s ease;
 }
+
+@media screen and (max-width: 767px) {
+  .flickity-button {
+    display: none;
+  }
+}

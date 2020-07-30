@@ -7,3 +7,9 @@
   margin-bottom: 12px;
   margin-top: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .search-results__card-date {
+    margin-bottom: 15px;
+  }
+}

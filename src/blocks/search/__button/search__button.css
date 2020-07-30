@@ -1,7 +1,7 @@
 .search__button {
   position: absolute;
   top: calc(50% - 32px);
-  right: 0;
+  right: -3px;
   background: #2F71E5;
   box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
   border-radius: 100px;
@@ -19,4 +19,11 @@
 
 .search__button:active {
   background: #2A65CC;
+}
+
+@media screen and (max-width: 767px) {
+  .search__button {
+    position: relative;
+    height: 56px;
+  }
 }
