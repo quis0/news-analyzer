@@ -1,6 +1,5 @@
 @import url(./_color/search-results__text_color_grey.css);
 @import url(./_color/search-results__text_color_black.css);
-
 .search-results__text {
   font-family: Roboto;
   font-style: normal;
@@ -9,4 +8,11 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .search-results__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

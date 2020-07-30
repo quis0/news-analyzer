@@ -7,3 +7,10 @@
   opacity: .8;
   transition: all .4s ease;
 }
+
+@media screen and (max-width: 767px) {
+  .footer__social-link {
+    text-decoration: none;
+    margin-right: 28px;
+  }
+}

@@ -1,0 +1,29 @@
+.commits__button {
+  text-decoration: none;
+  color: #1A1B22;
+  outline: none;
+  border: 1px solid #1A1B22;
+  box-sizing: border-box;
+  border-radius: 80px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  width: 288px;
+  margin: 42px auto 0 auto;
+  text-align: center;
+  padding: 16px 69px;
+  display: none;
+}
+
+.commits__button:hover {
+  opacity: .8;
+  transition: all .4s ease;
+}
+
+@media screen and (max-width: 767px) {
+  .commits__button {
+    display: block;
+  }
+}

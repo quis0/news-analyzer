@@ -1,7 +1,30 @@
 .search-results__header {
-  width: 1230px;
+  width: 1810px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 64px;
 }
+
+@media screen and (max-width: 1919px) {
+  .search-results__header {
+    width: 1230px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .search-results__header {
+    width: 688px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search-results__header {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 36px;
+  }
+}
+

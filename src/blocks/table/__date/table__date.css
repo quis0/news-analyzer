@@ -4,7 +4,19 @@
   font-weight: normal;
   font-size: 18px;
   color: #1A1B22;
-  line-height: 16px;
-  width: 55px;
+  line-height: 24px;
+  width: 75px;
   margin: 0 50px 0 0;
+}
+
+@media screen and (max-width: 1919px) {
+  .table__date {
+    margin-right: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .table__date {
+    margin-right: 51px;
+  }
 }

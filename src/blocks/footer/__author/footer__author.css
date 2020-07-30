@@ -3,7 +3,21 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 22px;
   color: #B6BCBF;
+}
+
+@media screen and (max-width: 1919px) {
+  .footer__author {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__author {
+    font-size: 16px;
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
 }

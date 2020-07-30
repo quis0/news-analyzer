@@ -3,9 +3,22 @@
 
 .commits__container {
   max-width: 1230px;
-  margin: 0 auto;
+  margin: 0 auto 64px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .commits__container {
+    max-width: 688px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .commits__container {
+    max-width: 288px;
+    margin-bottom: 16px;
+  }
 }

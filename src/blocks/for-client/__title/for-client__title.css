@@ -1,10 +1,32 @@
 .for-client__title {
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
   font-family: Roboto Slab;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 46px;
   line-height: 46px;
   color: #1A1B22;
+}
+
+@media screen and (max-width: 1919px) {
+  .for-client__title {
+    font-size: 40px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .for-client__title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .for-client__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
 }

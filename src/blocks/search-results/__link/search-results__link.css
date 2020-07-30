@@ -1,7 +1,7 @@
 .search-results__link {
   font-family: Roboto;
   font-style: normal;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 24px;
   text-align: center;
   margin-top: 0;
@@ -23,4 +23,10 @@
 .search-results__link:hover {
   opacity: .8;
   transition: all .4s ease;
+}
+
+@media screen and (max-width: 1919px) {
+  .search-results__link {
+    font-size: 18px;
+  }
 }

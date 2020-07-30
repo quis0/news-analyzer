@@ -11,5 +11,22 @@
 }
 
 .carousel-cell.is-selected {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .carousel-cell {
+    width: 336px;
+    height: 242px;
+    margin: 0 8px 32px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-cell {
+    width: 288px;
+    height: 264px;
+    margin: 0 8px 16px 0;
+    padding: 16px;
+  }
 }
