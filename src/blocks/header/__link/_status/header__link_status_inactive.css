@@ -1,0 +1,13 @@
+.header__link_status_inactive {
+  color: #B6BCBF;
+}
+
+.header__link_style_white.header__link_status_inactive:hover {
+  color: #FFFFFF;
+  transition: all .4s ease;
+}
+
+.header__link_style_black.header__link_status_inactive:hover {
+  color: #1A1B22;
+  transition: all .4s ease;
+}

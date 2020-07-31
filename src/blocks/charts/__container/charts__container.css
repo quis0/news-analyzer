@@ -1,0 +1,18 @@
+@import url(../__text/charts__text.css);
+
+.charts__container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .charts__container {
+    max-width: 688px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .charts__container {
+    max-width: 288px;
+  }
+}

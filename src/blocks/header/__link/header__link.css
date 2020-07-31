@@ -1,0 +1,27 @@
+@import url('./_style/header__link_style_white.css');
+@import url('./_style/header__link_style_black.css');
+@import url('./_status/header__link_status_active.css');
+@import url('./_status/header__link_status_inactive.css');
+
+.header__link {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1919px) {
+  .header__link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__link {
+    font-size: 16px;
+  }
+}

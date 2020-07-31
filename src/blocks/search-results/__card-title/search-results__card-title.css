@@ -1,0 +1,32 @@
+.search-results__card-title {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1A1B22;
+  margin-top: 0;
+  margin-bottom: 16px;
+  max-height: 90px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .search-results__card-title {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search-results__card-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    line-height: 26px;
+  }
+}

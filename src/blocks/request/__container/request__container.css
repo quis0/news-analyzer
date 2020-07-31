@@ -1,0 +1,20 @@
+@import url(../__text/request__text.css);
+@import url(../__span/request__span.css);
+@import url(../__title/request__title.css);
+
+.request__container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .request__container {
+    max-width: 688px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .request__container {
+    max-width: 288px;
+  }
+}

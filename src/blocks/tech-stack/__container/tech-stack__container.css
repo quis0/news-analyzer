@@ -1,0 +1,35 @@
+@import url(../__title/tech-stack__title.css);
+@import url(../__cards/tech-stack__cards.css);
+
+.tech-stack__container {
+  max-width: 1810px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding-right: 382px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1919px) {
+  .tech-stack__container {
+    max-width: 1230px;
+    padding-right: 110px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .tech-stack__container {
+    max-width: 688px;
+    padding-right: 0;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tech-stack__container {
+    max-width: 288px;
+    padding-right: 0;
+    flex-direction: column;
+  }
+}

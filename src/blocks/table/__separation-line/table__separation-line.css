@@ -1,0 +1,13 @@
+.table__separation-line {
+  background-color: #1A1B22;
+  width: 100%;
+  border: none;
+  height: 1px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .table__separation-line {
+    margin-bottom: 18px;
+  }
+}

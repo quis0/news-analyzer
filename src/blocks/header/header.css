@@ -1,0 +1,30 @@
+@import url(./__content/header__content.css);
+@import url(./__title/header__title.css);
+@import url(./__nav/header__nav.css);
+@import url(./__links/header__links.css);
+@import url(./__link/header__link.css);
+@import url(./__links-item/header__links-item.css);
+@import url(./_style/header_style_black.css);
+@import url(./_style/header_style_white.css);
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .header {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    margin-bottom: 30px;
+    height: 56px;
+  }
+}
+

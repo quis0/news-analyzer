@@ -1,0 +1,12 @@
+.search-results__title_size_small {
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .search-results__title_size_small {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}

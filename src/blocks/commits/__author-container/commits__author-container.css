@@ -1,0 +1,18 @@
+@import url(../__author-image/commits__author-image.css);
+@import url(../__author-name/commits__author-name.css);
+@import url(../__author-email/commits__author-email.css);
+.commits__author-container {
+  display: grid;
+  grid-template-columns: 64px auto;
+  column-gap: 16px;
+  grid-template-rows: auto auto;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1439px) {
+  .commits__author-container {
+    grid-template-columns: 48px auto;
+    column-gap: 12px;
+  }
+}
+

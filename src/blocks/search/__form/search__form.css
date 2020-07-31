@@ -1,0 +1,13 @@
+@import url(../__text-field/search__text-field.css);
+@import url(../__button/search__button.css);
+
+.search__form {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .search__form {
+    display: flex;
+    flex-direction: column;
+  }
+}

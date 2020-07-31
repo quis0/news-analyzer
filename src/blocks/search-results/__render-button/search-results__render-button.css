@@ -1,0 +1,19 @@
+.search-results__render-button {
+  background: #FFFFFF;
+  border-radius: 80px;
+  padding: 18px 84px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-results__render-button:hover {
+  opacity: 0.9;
+  transition: all .4s ease;
+}
+
+@media screen and (max-width: 767px) {
+  .search-results__render-button {
+    margin-top: 4px;
+  }
+}

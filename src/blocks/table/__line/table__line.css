@@ -1,0 +1,10 @@
+@import url(../__date/table__date.css);
+@import url(../__fill/table__fill.css);
+
+.table__line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}

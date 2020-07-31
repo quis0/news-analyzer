@@ -1,0 +1,22 @@
+@import url(./__container/commits__container.css);
+@import url(./__text/commits__text.css);
+@import url(./__card-date/commits__card-date.css);
+@import url(./__author-container/commits__author-container.css);
+@import url(./__button/commits__button.css);
+
+.commits {
+  background-color: #F5F6F7;
+  padding: 72px 0 84px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .commits {
+    padding: 40px 0 44px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .commits {
+    padding: 32px 0 32px 0;
+  }
+}

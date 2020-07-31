@@ -1,0 +1,15 @@
+.search-results__card-date {
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  line-height: 24px;
+  color: #B6BCBF;
+  text-align: left;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .search-results__card-date {
+    margin-bottom: 15px;
+  }
+}
