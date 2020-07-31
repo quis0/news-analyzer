@@ -4,6 +4,7 @@
   margin-bottom: 56px;
 }
 
+
 @media screen and (max-width: 767px) {
   .table__line-container {
     margin-bottom: 24px;
