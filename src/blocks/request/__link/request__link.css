@@ -1,4 +1,4 @@
-.request__text {
+.request__link {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -10,10 +10,14 @@
   text-decoration: none;
 }
 
+.request__link:hover {
+  opacity: 0.8;
+  transition: all .4s ease;
+}
+
 @media screen and (max-width: 1919px) {
-  .request__text {
+  .request__link {
     font-size: 18px;
   }
 }
-
 

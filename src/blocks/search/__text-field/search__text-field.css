@@ -11,7 +11,7 @@
 }
 
 .search__text-field:focus {
-  border: 2px solid black;
+  border: 2px solid #2F71E5;
 }
 
 @media screen and (max-width: 767px) {

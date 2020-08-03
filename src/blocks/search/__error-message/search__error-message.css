@@ -1,0 +1,12 @@
+.search__error-message {
+  color: white;
+  position: absolute;
+  bottom: -24px;
+  left: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .search__error-message {
+    top: -25px;
+  }
+}

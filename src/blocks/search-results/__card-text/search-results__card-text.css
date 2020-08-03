@@ -4,20 +4,29 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 22px;
+  line-height: 24px;
   color: #1A1B22;
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  max-height: 110px;
+  max-height: 120px;
+}
+
+@media screen and (max-width: 1919px) {
+  .search-results__card-text {
+    font-size: 16px;
+    line-height: 22px;
+    max-height: 110px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .search-results__card-text {
     -webkit-line-clamp: 4;
     margin-bottom: 12px;
+    max-height: 110px;
   }
 }
 
@@ -25,5 +34,6 @@
   .search-results__card-text {
     -webkit-line-clamp: 4;
     margin-bottom: 5px;
+    max-height: 110px;
   }
 }
