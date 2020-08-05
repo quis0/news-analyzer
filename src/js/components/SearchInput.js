@@ -4,6 +4,7 @@ export class SearchInput {
     this._checkInputValidity = this._checkInputValidity.bind(this);
     this._handlerInputForm = this._handlerInputForm.bind(this);
     this.callback = callback;
+    this._setHandlers();
   }
 
   _isValidate(input) {
@@ -76,10 +77,10 @@ export class SearchInput {
     }
   };
 
-  setEventListeners() {
+  _setHandlers() {
     this._form.addEventListener('submit', this._checkInputValidity);
     this._form.addEventListener('input', this._handlerInputForm)
-  }
+  };
 
 
 }

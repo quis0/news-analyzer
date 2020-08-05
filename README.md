@@ -2,7 +2,7 @@
 
 *Read this in other languages: [English](README.md), [Русский](README.ru.md)*
 
-### Current version: 0.1.2 :white_check_mark:
+### Current version: 0.1.3 :white_check_mark:
 
 ### Quick start
 

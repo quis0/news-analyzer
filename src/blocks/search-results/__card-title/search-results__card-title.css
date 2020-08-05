@@ -4,9 +4,9 @@
   font-weight: normal;
   color: #1A1B22;
   margin-top: 0;
-  max-height: 90px;
+  max-height: 110px;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-size: 32px;
@@ -16,6 +16,8 @@
 
 @media screen and (max-width: 1919px) {
   .search-results__card-title {
+    max-height: 90px;
+    -webkit-line-clamp: 2;
     margin-bottom: 16px;
     font-size: 26px;
     line-height: 30px;
