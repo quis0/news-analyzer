@@ -42,7 +42,7 @@ export class SearchInput {
     return isValid;
   }
 
-  setSubmitButtonState(state) {
+  _setSubmitButtonState(state) {
     const button = this._form.button;
     if (state) {
       button.removeAttribute('disabled');
@@ -70,9 +70,9 @@ export class SearchInput {
       this._isFieldValid(evt.target);
 
       if (inputs.every(this._isValidate)) {
-        this.setSubmitButtonState(true);
+        this._setSubmitButtonState(true);
       } else {
-        this.setSubmitButtonState(false);
+        this._setSubmitButtonState(false);
       }
     }
   };

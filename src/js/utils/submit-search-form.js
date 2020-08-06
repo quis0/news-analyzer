@@ -17,12 +17,9 @@ export function submitSearchForm(request) {
     .then((res) => {
       toggleStatus('search-results__preloader', 'off');
       if (res.articles.length != 0) {
-        //TODO: загрузка по 3
-        res.articles.forEach((article) => {
-          console.log(article.description)
-          newsCardList.addCard(article);
-        })
-        dataStorage.put('request', JSON.stringify(res));
+        dataStorage.put('request', res, request);
+        newsCardList.renderThree(dataStorage.get('request').articles);
+
         toggleStatus('search-results__card-container', 'on');
       } else {
         toggleStatus('search-results__empty', 'on');
