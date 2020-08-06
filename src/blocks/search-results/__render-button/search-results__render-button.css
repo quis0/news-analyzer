@@ -1,3 +1,6 @@
+@import url(./_status/search-results__render-button_status_active.css);
+@import url(./_status/search-results__render-button_status_inactive.css);
+
 .search-results__render-button {
   background: #FFFFFF;
   border-radius: 80px;
