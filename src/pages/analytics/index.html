@@ -41,13 +41,13 @@
            <a href="./analytics.html" class="request__span request__span_style_grey">Аналитика</a>
         </div>
 
-        <h2 class="request__title">Вы спросили: «<span class="request__span">Путешествия</span>»</h2>
+        <h2 class="request__title">Вы спросили: «<span class="request__span" id="request"></span>»</h2>
 
-        <p class="request__text">Новостей за неделю: <span class="request__span request__span_style_black">34 324</span>
+        <p class="request__text">Новостей за неделю: <span class="request__span request__span_style_black" id="total-results"></span>
         </p>
 
         <p class="request__text">Упоминаний в заголовках: <span
-            class="request__span request__span_style_black">235</span></p>
+            class="request__span request__span_style_black" id="total-results-headings"></span></p>
       </div>
     </section>
 
@@ -56,9 +56,9 @@
         <p class="charts__text">Аналитика по дням</p>
         <div class="table">
           <div class="table__titles">
-            <h3 class="table__title">Дата <span class="table__span">(месяц)</span></h3>
+            <h3 class="table__title">Дата <span class="table__span" id="months"></span></h3>
 
-            <h3 class="table__title">Кол-во упоминаний</h3>
+            <h3 class="table__title">Кол-во упоминаний, %</h3>
           </div>
 
           <hr class="table__separation-line">

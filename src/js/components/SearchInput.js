@@ -1,9 +1,10 @@
 export class SearchInput {
-  constructor(callback) {
+  constructor(callback, dataStorage) {
     this._form = document.querySelector('.search__form');
     this._checkInputValidity = this._checkInputValidity.bind(this);
     this._handlerInputForm = this._handlerInputForm.bind(this);
     this.callback = callback;
+    this.dataStorage = dataStorage;
     this._setHandlers();
   }
 
@@ -82,5 +83,7 @@ export class SearchInput {
     this._form.addEventListener('input', this._handlerInputForm)
   };
 
-
+  render() {
+    this._form.text.value = this.dataStorage.get('requestName');
+  }
 }

@@ -1,8 +1,11 @@
+import { toggleStatus } from '../utils/toggle-status.js'
+
 export class NewsCardList {
-  constructor(root, createCard) {
+  constructor(root, createCard, dataStorage) {
     this._root = root;
     this._createCard = createCard;
     this.iterator = 0;
+    this.dataStorage = dataStorage;
     this._setHandlers();
   }
 
@@ -18,16 +21,38 @@ export class NewsCardList {
     }
   }
 
+  render() {
+    this._setButtonState(this.dataStorage.get('buttonState'));
+    try {
+      this._articles = JSON.parse(this.dataStorage.get('request')).articles;
+      if (this._articles.length) {
+        toggleStatus('search-results__container', 'on');
+        toggleStatus('search-results__card-container', 'on');
+        for (let i = 0; i < this.dataStorage.get('totalCards'); i++) {
+          this.addCard(this._articles[i]);
+          this.iterator = i;
+        }
+      }
+    } catch {
+      return;
+    }
+
+  }
+
   renderThree(articles) {
     this._setButtonState(true);
     this._articles = articles;
+
     for (let i = 0; i < 3; i++) {
       if (articles[this.iterator]) {
-
         this.addCard(articles[this.iterator]);
         this.iterator++;
+        this.dataStorage.put('totalCards', this.iterator)
+        this.dataStorage.put('buttonState', 'true');
       } else {
+        this._articles.length = 0;
         this._setButtonState(false);
+        this.dataStorage.put('buttonState', '');
         return;
       }
     }

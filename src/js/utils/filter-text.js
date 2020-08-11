@@ -1,4 +1,5 @@
-export function fliterText(text) {
+export function filterText(text) {
   const regexp = /<.+>/g
-  return text.replace(regexp, '');
+  //проверка на случай, когда нет описания новости
+  return text ? text.replace(regexp, '') : '';
 }

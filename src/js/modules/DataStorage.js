@@ -1,15 +1,12 @@
 export class DataStorage {
-  constructor() {
+  constructor() {}
 
-  }
-
-  put(key, value, requestName) {
-    localStorage.setItem(key, JSON.stringify(value));
-    localStorage.setItem('requestName', requestName);
+  put(key, value) {
+    localStorage.setItem(key, value);
   }
 
   get(key) {
-    return JSON.parse(localStorage.getItem(key));
+    return localStorage.getItem(key);
   }
 
   clear() {

@@ -7,11 +7,10 @@ import { NewsApi } from '../../js/modules/NewsApi.js';
 import { NewsCardList } from '../../js/components/NewsCardList.js';
 import { NewsCard } from '../../js/components/NewsCard.js'
 
-
 export const dataStorage = new DataStorage();
-
-const searchInput = new SearchInput(submitSearchForm);
+const searchInput = new SearchInput(submitSearchForm, dataStorage);
 export const newsApi = new NewsApi(config);
-const newsCardContainer = document.querySelector('.search-results__cards');
 export const newsCard = new NewsCard();
-export const newsCardList = new NewsCardList(newsCardContainer, newsCard.create);
+export const newsCardList = new NewsCardList(document.querySelector('.search-results__cards'), newsCard.create, dataStorage);
+searchInput.render();
+newsCardList.render();

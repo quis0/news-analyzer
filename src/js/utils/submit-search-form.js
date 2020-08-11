@@ -17,8 +17,9 @@ export function submitSearchForm(request) {
     .then((res) => {
       toggleStatus('search-results__preloader', 'off');
       if (res.articles.length != 0) {
-        dataStorage.put('request', res, request);
-        newsCardList.renderThree(dataStorage.get('request').articles);
+        dataStorage.put('request', JSON.stringify(res));
+        dataStorage.put('requestName', request);
+        newsCardList.renderThree(JSON.parse(dataStorage.get('request')).articles);
 
         toggleStatus('search-results__card-container', 'on');
       } else {

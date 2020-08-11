@@ -1,5 +1,5 @@
 import { transformDate } from '../utils/transofrm-date.js';
-import { fliterText } from '../utils/filter-text.js';
+import { filterText } from '../utils/filter-text.js';
 
 export class NewsCard {
   constructor() {
@@ -12,7 +12,7 @@ export class NewsCard {
           <img src="${data.urlToImage}" alt="" class="search-results__card-image">
           <p class="search-results__card-date">${transformDate(data.publishedAt)}</p>
           <h3 class="search-results__card-title">${data.title}</h3>
-          <p class="search-results__card-text">${fliterText(data.description)}</p>
+          <p class="search-results__card-text">${filterText(data.description)}</p>
           <p class="search-results__author">${data.source.name}</p>
         </a>
       </li>

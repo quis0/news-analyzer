@@ -1,3 +1,4 @@
 .table__span {
   display: block;
+  max-width: 100px;
 }
