@@ -8,7 +8,7 @@ import { NewsCardList } from '../../js/components/NewsCardList.js';
 import { NewsCard } from '../../js/components/NewsCard.js'
 
 export const dataStorage = new DataStorage();
-const searchInput = new SearchInput(submitSearchForm, dataStorage);
+export const searchInput = new SearchInput(submitSearchForm, dataStorage);
 export const newsApi = new NewsApi(config);
 export const newsCard = new NewsCard();
 export const newsCardList = new NewsCardList(document.querySelector('.search-results__cards'), newsCard.create, dataStorage);

@@ -34,7 +34,7 @@
   .search-results__card-image {
     width: calc(100% + 32px);
     height: 196px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     left: -16px;
   }
 }

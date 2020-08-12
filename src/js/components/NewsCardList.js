@@ -6,7 +6,7 @@ export class NewsCardList {
     this._createCard = createCard;
     this.iterator = 0;
     this.dataStorage = dataStorage;
-    this._setHandlers();
+    this.setHandlers();
   }
 
   _setButtonState(state) {
@@ -69,7 +69,7 @@ export class NewsCardList {
     this.iterator = 0;
   }
 
-  _setHandlers() {
+  setHandlers() {
     document.querySelector('.search-results__render-button').addEventListener('click', () => this.renderThree(this._articles))
   }
 

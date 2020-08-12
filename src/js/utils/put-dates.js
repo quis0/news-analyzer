@@ -1,11 +1,13 @@
+// Функция сохраняет в localStorage последние 7 дней с форматированием и 1/2 месяц(а) в зависимости от даты
+
 export function putDates(dataStorage) {
   const days = [];
   const months = [];
   let options = { weekday: 'short', day: 'numeric' };
 
   for (let i = 7; i > 0; i--) {
-    const dateInMilliseconds = i * 24 * 60 * 60 * 1000;
-    const date = new Date().getTime() - dateInMilliseconds;
+    const daysInMilliseconds = i * 24 * 60 * 60 * 1000;
+    const date = new Date().getTime() - daysInMilliseconds;
     const result = new Intl.DateTimeFormat('ru', options).format(date);
     days.push(result.match(/\d+/gi) + ', ' + result.match(/[а-я]+/gi));
   }

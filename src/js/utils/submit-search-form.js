@@ -1,7 +1,9 @@
 import { toggleStatus } from './toggle-status.js';
 import { sendRequest } from './send-request.js';
-import { dataStorage, newsCardList } from '../../pages/main/index.js';
+import { dataStorage, newsCardList, searchInput } from '../../pages/main/index.js';
 
+// Функция очищает локальное хранилище и убирает предыдущие карточки, после чего отправляет запрос к серверу, сохраняя данные о запросе.
+// После ответа сервера отрисовывает первые 3 карточки.
 
 export function submitSearchForm(request) {
 
@@ -12,10 +14,12 @@ export function submitSearchForm(request) {
 
   dataStorage.clear();
   newsCardList.clear();
+  searchInput.setSubmitButtonState(false);
 
   sendRequest(request)
     .then((res) => {
       toggleStatus('search-results__preloader', 'off');
+      searchInput.setSubmitButtonState(true);
       if (res.articles.length != 0) {
         dataStorage.put('request', JSON.stringify(res));
         dataStorage.put('requestName', request);

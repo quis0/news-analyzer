@@ -3,9 +3,9 @@ export class SearchInput {
     this._form = document.querySelector('.search__form');
     this._checkInputValidity = this._checkInputValidity.bind(this);
     this._handlerInputForm = this._handlerInputForm.bind(this);
-    this.callback = callback;
-    this.dataStorage = dataStorage;
-    this._setHandlers();
+    this._callback = callback;
+    this._dataStorage = dataStorage;
+    this.setHandlers();
   }
 
   _isValidate(input) {
@@ -43,7 +43,7 @@ export class SearchInput {
     return isValid;
   }
 
-  _setSubmitButtonState(state) {
+  setSubmitButtonState(state) {
     const button = this._form.button;
     if (state) {
       button.removeAttribute('disabled');
@@ -60,7 +60,7 @@ export class SearchInput {
     evt.preventDefault();
 
     if (this._isFormValid(this._form)) {
-      this.callback(this._form.text.value);
+      this._callback(this._form.text.value);
     }
   }
 
@@ -71,19 +71,19 @@ export class SearchInput {
       this._isFieldValid(evt.target);
 
       if (inputs.every(this._isValidate)) {
-        this._setSubmitButtonState(true);
+        this.setSubmitButtonState(true);
       } else {
-        this._setSubmitButtonState(false);
+        this.setSubmitButtonState(false);
       }
     }
   };
 
-  _setHandlers() {
+  setHandlers() {
     this._form.addEventListener('submit', this._checkInputValidity);
     this._form.addEventListener('input', this._handlerInputForm)
   };
 
   render() {
-    this._form.text.value = this.dataStorage.get('requestName');
+    this._form.text.value = this._dataStorage.get('requestName');
   }
 }

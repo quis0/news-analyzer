@@ -1,3 +1,5 @@
+// Функция добавляет/убирает класс (статус состояния) элементам
+
 export function toggleStatus(className, status) {
   const elem = document.querySelector(`.${className}`);
   if (status === 'off') {
