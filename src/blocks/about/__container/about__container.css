@@ -1,5 +1,6 @@
 @import url(../__photo/about__photo.css);
 @import url(../__text-container/about__text-container.css);
+@import url(../__link/about__link.css);
 
 .about__container {
   max-width: 1810px;

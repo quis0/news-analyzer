@@ -1,0 +1,6 @@
+@import url(./_status/commits__error_status_active.css);
+@import url(./_status/commits__error_status_inactive.css);
+
+.commits__error {
+  text-align: center;
+}

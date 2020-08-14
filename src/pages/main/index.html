@@ -40,7 +40,8 @@
         прошедшую неделю.
       </p>
       <form novalidate class="search__form">
-        <input required type="text" name="text" id="text" placeholder="Введите тему новости" minlength="3" class="search__text-field">
+        <input required type="text" name="text" id="text" placeholder="Введите тему новости" minlength="3"
+          class="search__text-field">
         <button name="button" type="submit" class="search__button search__button_status_valid">Искать</button>
         <span id="error-text" class="search__error-message"></span>
       </form>
@@ -65,6 +66,12 @@
           </p>
         </div>
 
+        <div class="search-results__error search-results__error_status_inactive">
+          <p class="search-results__text search-results__text_color_grey">
+            Что-то пошло не так! Пожалуйста, попробуйте еще раз через пару минут.
+          </p>
+        </div>
+
         <div class="search-results__card-container search-results__card-container_status_inactive">
           <div class="search-results__header">
             <h2 class="search-results__title search-results__title_size_big">Результаты поиска</h2>
@@ -81,18 +88,21 @@
 
     <section class="about">
       <div class="about__container">
-        <img src="<%=require('../../images/test-image.jpg').default%>" alt="Фотография автора" class="about__photo">
+        <img src="<%=require('../../images/my-photo.jpg').default%>" alt="Фотография автора" class="about__photo">
         <div class="about__text-container">
           <h3 class="about__title">Об авторе</h3>
           <p class="about__paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolores ea unde
-            voluptatum sint vel modi, repellendus recusandae consequuntur sunt similique eligendi eius? Tenetur totam ea
-            quam dolorum doloremque officia.
+            Меня зовут Григорий Зоткевич, я начинающий frontend разработчик.
           </p>
           <p class="about__paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus dolores ea unde
-            voluptatum sint vel modi, repellendus recusandae consequuntur sunt similique eligendi eius? Tenetur totam ea
-            quam dolorum doloremque officia.
+            На курсах от Яндекс.Практикума научился верстать, писать современный JS код, работать с Git, Webpack,
+            макетами в Figma. Имею опыт работы с CSS-препроцессорами, владею навыком адаптивной верстки.
+          </p>
+          <p class="about__paragraph">
+            email: <a class="about__link" target="_blank" href="mailto:zotkevich@bk.ru">zotkevich@bk.ru</a>
+          </p>
+          <p class="about__paragraph">
+            telegram: <a class="about__link" target="_blank" href="https://t.me/grigoryzotkevich">@grigoryzotkevich</a>
           </p>
         </div>
       </div>
