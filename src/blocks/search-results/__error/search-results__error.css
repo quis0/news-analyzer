@@ -1,0 +1,6 @@
+@import url('./_status/search-results__error_status_active.css');
+@import url('./_status/search-results__error_status_inactive.css');
+
+.search-results__error {
+  padding: 20px 0 0 0;
+}

@@ -11,6 +11,7 @@ export function submitSearchForm(request) {
   toggleStatus('search-results__preloader', 'on');
   toggleStatus('search-results__empty', 'off');
   toggleStatus('search-results__card-container', 'off');
+  toggleStatus('search-results__error', 'off');
 
   dataStorage.clear();
   newsCardList.clear();
@@ -30,9 +31,9 @@ export function submitSearchForm(request) {
         toggleStatus('search-results__empty', 'on');
       }
     })
-    .catch(err => console.log(err));
-
-
-
+    .catch(() => {
+      toggleStatus('search-results__preloader', 'off');
+      toggleStatus('search-results__error', 'on');
+    });
 }
 
