@@ -9,7 +9,8 @@ export class CommitCardList {
   }
 
   render(data) {
-    const length = data.length > 10 ? 10 : data.length;
+    const maxNumberOfCards = 10;
+    const length = data.length > maxNumberOfCards ? maxNumberOfCards : data.length;
     for (let i = 0; i < length; i++) {
       this.addCard(data[i]);
     }
