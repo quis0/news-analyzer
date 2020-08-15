@@ -1,0 +1,23 @@
+.request__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 24px;
+  color: #1A1B22;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.request__link:hover {
+  opacity: 0.8;
+  transition: all .4s ease;
+}
+
+@media screen and (max-width: 1919px) {
+  .request__link {
+    font-size: 18px;
+  }
+}
+

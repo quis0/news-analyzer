@@ -1,0 +1,1 @@
+export const STARTING_DATE_NUMBER_DAYS = 7;

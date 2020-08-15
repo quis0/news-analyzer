@@ -1,7 +1,5 @@
 @import url(../__fill-text/table__fill-text.css);
 .table__fill {
-  width: 25%;
-  padding-left: 6px;
   box-sizing: border-box;
   background-color: #2F71E5;
   height: 24px;

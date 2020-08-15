@@ -7,6 +7,7 @@
   color: #1A1B22;
   margin-top: 0;
   margin-bottom: 0;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1919px) {
@@ -15,8 +16,4 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .request__text:nth-of-type(1) {
-    display: none;
-  }
-}
+

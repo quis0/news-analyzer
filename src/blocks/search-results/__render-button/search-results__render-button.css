@@ -1,3 +1,6 @@
+@import url(./_status/search-results__render-button_status_active.css);
+@import url(./_status/search-results__render-button_status_inactive.css);
+
 .search-results__render-button {
   background: #FFFFFF;
   border-radius: 80px;
@@ -7,8 +10,13 @@
   cursor: pointer;
 }
 
+.search-results__render-button:focus {
+  border: 2px solid black;
+}
+
 .search-results__render-button:hover {
-  opacity: 0.9;
+  opacity: 0.8;
+  box-shadow: 2px 2px 12px grey;
   transition: all .4s ease;
 }
 

@@ -1,0 +1,6 @@
+
+@media screen and (max-width: 767px) {
+  .request__links {
+    display: none;
+  }
+}

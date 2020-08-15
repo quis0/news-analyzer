@@ -1,11 +1,24 @@
 .search-results__card-image {
-  width: calc(100% + 48px);
+  width: calc(100% + 64px);
   position: relative;
-  left: -24px;
+  left: -32px;
   top: 0;
-  height: 272px;
+  height: 340px;
   border-radius: 16px 16px 0 0;
   margin-bottom: 20px;
+  object-fit: contain;
+  background-color: #1a1b22;
+}
+
+
+
+@media screen and (max-width: 1919px) {
+  .search-results__card-image {
+    width: calc(100% + 48px);
+    height: 272px;
+    margin-bottom: 20px;
+    left: -24px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
@@ -21,7 +34,7 @@
   .search-results__card-image {
     width: calc(100% + 32px);
     height: 196px;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     left: -16px;
   }
 }
