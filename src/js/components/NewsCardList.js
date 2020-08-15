@@ -6,18 +6,18 @@ export class NewsCardList {
     this._createCard = createCard;
     this.iterator = 0;
     this.dataStorage = dataStorage;
+    this._renderButton = document.querySelector('.search-results__render-button');
     this.setHandlers();
   }
 
   _setButtonState(state) {
-    const button = document.querySelector('.search-results__render-button');
 
     if (state) {
-      button.classList.add('search-results__render-button_status_active');
-      button.classList.remove('search-results__render-button_status_inactive');
+      this._renderButton.classList.add('search-results__render-button_status_active');
+      this._renderButton.classList.remove('search-results__render-button_status_inactive');
     } else {
-      button.classList.add('search-results__render-button_status_inactive');
-      button.classList.remove('search-results__render-button_status_active');
+      this._renderButton.classList.add('search-results__render-button_status_inactive');
+      this._renderButton.classList.remove('search-results__render-button_status_active');
     }
   }
 
